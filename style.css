@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --container1-color: #eadfbe;
+  --container1-color2: #e5e2e1;
+  --header-green: #417505;
+  --container2-yellow: #efb402;
+  --container4-green: #919974;
+  --tittle-green: #313a09;
+  --bg-footer: #dfdad8;
+  --color-footer: #3d3c3c;
+  --black: #000;
+  --white: #fff;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+/* HEADER */
+.container-header {
+  width: auto;
+  display: flex;
+  gap: 10vw;
+  padding: 8px;
+  background-color: var(--container1-color);
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.container-header-logo {
+  display: flex;
+  gap: 5px;
+}
+.container-header-logo > p {
+  margin-top: 12px;
+  font-weight: bold;
+}
+.logo-buriti {
+  min-width: 3vw;
+  height: 6vh;
+}
+
+.container-header-lista {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 17px;
+  justify-content: flex-end;
+}
+
+.container-header-lista ul {
+  list-style: none;
+  display: flex;
+  gap: 8vw;
+}
+
+.container-header-lista a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.container-header-lista a:hover {
+  color: var(--header-green);
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* CONTAINER 1 */
+
+.conteudo-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--container1-color2);
+  height: 92vh;
+}
+
+.container-cont1-textos {
+  padding: 35px;
+}
+.container-cont1-textos h1 {
+  max-width: 350px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.container-cont1-textos p {
+  text-align: end;
+  margin-top: 4vh;
+  font-size: 18px;
+}
+
+/* CONTAINER 2 */
+
+.centraliza {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 360px;
+  padding: 20px;
+}
+.conteudo-2 {
+  height: 100vh;
+  background-color: var(--container2-yellow);
+  display: flex;
+  padding: 10px;
+}
+
+.conteudo-2 img {
+  height: 550px;
+}
+
+.container-cont2-textos {
+  padding: 35px;
+  text-align: center;
+  width: 70%;
+  color: var(--white);
+}
+
+.container-cont2-textos h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--black);
+}
+
+.container-cont2-textos p {
+  margin-top: 4vh;
+  font-size: 18px;
+}
+
+/* CONTAINER 3 */
+
+.conteudo-3 {
+  height: 100vh;
+  background-color: var(--container1-color2);
+  padding: 50px;
+}
+
+.container-cont3-textos {
+  padding: 35px;
+  width: 40%;
+}
+.container-cont3-textos h2 {
+  max-width: 300px;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: end;
+  margin-left: 28vh;
+}
+
+.container-cont3-textos p {
+  margin-top: 4vh;
+  max-width: 90%;
+  font-size: 18px;
+}
+.container-cont3-imagem {
+  justify-content: flex-end;
+  margin-left: 50px;
+}
+
+/* CONTAINER 4 */
+
+.container-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  gap: 400px;
+  background-color: var(--container4-green);
+  padding: 40px;
+  color: var(--white);
+  flex-direction: row-reverse;
+}
+
+.container-cont4-textos h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(tittle-green);
+}
+.container-cont4-textos p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.btn-grad a {
+  list-style: none;
+  color: inherit;
+  text-decoration: none;
+}
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #add100 0%,
+    #7b920a 51%,
+    #add100 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--white);
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: var(--white);
+  text-decoration: none;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* RODAPE */
+
+footer {
+  height: 25vh;
+  background-color: var(--bg-footer);
+  text-align: center;
+  color: var(--color-footer);
+}
+
+.container-nomes {
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  padding-top: 35px;
+}
+
+h3 {
+  font-weight: bold;
+  color: var(--black);
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
